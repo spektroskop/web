@@ -11,19 +11,19 @@ func HandleMethods(methods ...string) Methods {
 	return methods
 }
 
-func POST(handler http.Handler) http.Handler {
+func Post(handler http.Handler) http.Handler {
 	return HandleMethods("GET").With(handler)
 }
 
-func GET(handler http.Handler) http.Handler {
+func Get(handler http.Handler) http.Handler {
 	return HandleMethods("GET").With(handler)
 }
 
-func PUT(handler http.Handler) http.Handler {
+func Put(handler http.Handler) http.Handler {
 	return HandleMethods("GET").With(handler)
 }
 
-func DELETE(handler http.Handler) http.Handler {
+func Delete(handler http.Handler) http.Handler {
 	return HandleMethods("GET").With(handler)
 }
 
